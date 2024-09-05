@@ -1,5 +1,11 @@
 > config file is usually located in the same folder where the installation files are located
 
+### **Restart dwm**:
+    You can either log out and back in, or restart dwm by killing and restarting it:
+    ```bash
+    killall dwm
+    ```
+
 ## 1. ensure git is installed
 
 changes to config file must be tracked.
