@@ -33,4 +33,7 @@ This will remove Dolphin from your system along with any unnecessary dependencie
      sudo apt autoremove
      ```
 
-After these steps, Dolphin should be completely removed from your system. If you need further assistance or have any other questions, feel free to ask!
+## Cleaning the build directory to avoid issues with the previous failed build:
+```sh
+rm -rf build
+```
