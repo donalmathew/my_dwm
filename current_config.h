@@ -5,10 +5,12 @@
 
 //i made 
 void togglefullscr(const Arg *arg);
+#include <X11/XF86keysym.h>
+
 //end
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -87,7 +89,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,                       XK_c,      killclient,     {0} },
+	{ MODKEY,                       XK_x,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
@@ -109,6 +111,12 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ 0,                       	XK_Print,  spawn,          SHCMD("flameshot gui") },
+	{ 0, 				XF86XK_AudioLowerVolume, 	spawn, 		SHCMD("amixer set Master 5%-") },
+	{ 0, 	XF86XK_AudioRaiseVolume, spawn, SHCMD("amixer set Master 5%+") },
+	{ 0, 	XF86XK_AudioMute,        spawn, SHCMD("amixer set Master toggle") },
+	{ 0, 			XK_F10, 	spawn, 	SHCMD("xset dpms force off") },
+
 };
 
 /* button definitions */
