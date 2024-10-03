@@ -106,36 +106,10 @@ npm start
 
 This will launch an Electron window that loads WhatsApp Web.
 
-### 8. (Optional) Create a Desktop Shortcut
-To make the app easily accessible, you can create a `.desktop` file to integrate it into your system.
-
-- Create a file called `whatsapp-web.desktop` in `~/.local/share/applications/`:
-
-```bash
-touch ~/.local/share/applications/whatsapp-web.desktop
-```
-
-- Add the following content to the file:
-
-```ini
-[Desktop Entry]
-Version=1.0
-Name=WhatsApp Web
-Exec=/path/to/your/project/whatsapp-web-app/npm start
-Terminal=false
-Type=Application
-Icon=whatsapp
-Categories=Internet;
-```
-
-Replace `/path/to/your/project/` with the actual path to your app. 
-
-This will make WhatsApp Web appear in your applications menu.
-
 ### Conclusion
 You've successfully created a simple Electron app to run WhatsApp Web on Linux. You can enhance this by adding additional features like notifications, tray icons, or custom window controls.
 
-### 2. conflicts
+## 2. conflicts
 The error you're encountering happens because Electron is looking for a file (like `index.js`) to launch, and it can't find it. In your `package.json`, the `main` field should point to your `main.js` file. Here's how to fix it:
 
 ### Step 1: Update `package.json`
@@ -165,11 +139,11 @@ npm start
 
 This should launch the WhatsApp Web Electron app.
 
-### 3. making firefox the default browser:
+## 3. making firefox the default browser:
 Electron uses Chromium as its rendering engine by default, but it's not possible to swap the underlying browser engine for something like Firefox directly in an Electron app. However, there are two alternative approaches you can try to use Firefox or mimic its experience:
 
 
-### Option 3: Use Electron but Change User Agent
+### Use Electron but Change User Agent
 If you still want to stick with Electron, you can set the user agent to pretend it's Firefox. This won't actually use Firefox but may bypass the Chrome-specific checks.
 
 Modify your `main.js` to add a custom user agent:
@@ -201,7 +175,7 @@ function createWindow() {
 
 This will make the app identify itself as Firefox to the WhatsApp Web servers, which may help avoid the Chrome version issue. However, it still won't use Firefox's rendering engine.
 
-### 4. making executable sh file:
+## 4. making executable sh file:
 
 Consider creating a shell script in your project directory to handle the execution:
 
@@ -229,3 +203,17 @@ chmod +x ~/whatsapp-web-launcher.sh
 ```bash
 sudo sh whatsapp-web-launcher.sh &
 ```
+
+## 5. make it appear in dmenu:
+1. find the locations where dmenu searches:
+    ```sh
+    echo $PATH
+    ```
+2. move the script to the location:
+    ```sh
+    mv /path/to/your-script.sh ~/bin/
+    ```
+    - alternatively add a link to /bin
+        ```sh
+        ln -s /path/to/your-script.sh ~/bin/your-script.sh
+        ```
