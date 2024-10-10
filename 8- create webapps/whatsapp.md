@@ -211,9 +211,9 @@ sudo sh whatsapp-web-launcher.sh &
     ```
 2. move the script to the location:
     ```sh
-    mv /path/to/your-script.sh /bin/
+    mv /path/to/your-script.sh ~/../bin
     ```
-    - alternatively add a link to /bin
+    - alternatively add a link to ~/../bin
         ```sh
         ln -s /path/to/your-script.sh /bin/your-script.sh
         ```
