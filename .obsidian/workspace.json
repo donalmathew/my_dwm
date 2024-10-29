@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1- getting started/5 resizing floating windows.md",
-                "mode": "source",
+                "file": "3- hardware configs/3.8 wifi.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1- getting started/5 resizing floating windows.md",
+                "file": "3- hardware configs/3.8 wifi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1- getting started/5 resizing floating windows.md",
+                "file": "3- hardware configs/3.8 wifi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1- getting started/5 resizing floating windows.md"
+                "file": "3- hardware configs/3.8 wifi.md"
               }
             }
           }
@@ -160,8 +160,8 @@
   },
   "active": "cc9ac5eb383ec04d",
   "lastOpenFiles": [
-    "1- getting started/1- dwm installation.md",
     "1- getting started/5 resizing floating windows.md",
+    "1- getting started/1- dwm installation.md",
     "8- create webapps/8.2 desktop shortcut.md",
     "git codes.md",
     "README.md",
