@@ -8,6 +8,9 @@ To change the setting `CPU_ENERGY_PERF_POLICY_ON_BAT="balance_power"` in TLP, yo
    ```bash
    sudo nano /etc/tlp.conf
    ```
+----------------------------
+## note: ensure that TLP_ENABLE=1
+-----------------
 
 2. **Locate the Setting**:
    Search for the line that contains `CPU_ENERGY_PERF_POLICY_ON_BAT`. It may look like this:
@@ -129,7 +132,6 @@ Yes, you can make these power-saving settings permanent by configuring them in t
    ```
 
 These settings will now be applied automatically every time you boot into battery mode. If you need to adjust any settings later, you can simply edit `/etc/tlp.conf` again and restart TLP.
-
 
 
 ### bluetooth not turning on after this:

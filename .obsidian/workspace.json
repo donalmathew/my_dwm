@@ -85,14 +85,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9-battery/disabling cpu-cores.md",
+                "file": "9-battery/tlp.md",
                 "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e3d2c6042292689d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9-battery/tlp.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "9-battery/disabling cpu-cores.md",
+                "file": "9-battery/tlp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "9-battery/disabling cpu-cores.md",
+                "file": "9-battery/tlp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "9-battery/disabling cpu-cores.md"
+                "file": "9-battery/tlp.md"
               }
             }
           }
@@ -219,19 +231,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f86e4114e9ce33ae",
+  "active": "e3d2c6042292689d",
   "lastOpenFiles": [
+    "8- create webapps/whatsapp.md",
+    "8- create webapps/readme.md",
+    "9-battery/tlp.md",
+    "9-battery/bluetooth not working with powertop or tlp.md",
+    "3- hardware configs/3.7- battery threshold.md",
     "9-battery/powertop on top of tlp.md",
     "9-battery/disabling cpu-cores.md",
-    "9-battery/tlp.md",
-    "3- hardware configs/3.7- battery threshold.md",
     "9-battery/for i5 12500h.md",
     "1- getting started/1- dwm installation.md",
     "9-battery/startup apps.md",
     "9-battery",
     "4- app installations/4.5- appimage.md",
-    "8- create webapps/whatsapp.md",
-    "8- create webapps/readme.md",
     "8- create webapps/8.2 desktop shortcut.md",
     "4- app installations/4.6- .tar.xz.md",
     "4- app installations/4.4- setup.sh file.md",
